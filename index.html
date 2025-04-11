@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XtPay</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: black;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      transition: color 0.5s ease;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">XtPay</h1>
+
+  <script>
+    // Make text appear after 300ms in white
+    setTimeout(() => {
+      document.body.style.color = "white";
+    }, 300);
+
+    // Redirect to login.html after 2 seconds
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 2000);
+  </script>
+</body>
+</html>

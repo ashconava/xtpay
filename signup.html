@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XtPay - Sign Up</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .signup-box {
+      background-color: #1a1a1a;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      width: 320px;
+    }
+
+    .signup-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #00bcd4;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #ccc;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0097a7;
+    }
+
+    .login {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .login a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-box">
+    <h2>Sign Up to XtPay</h2>
+    <form onsubmit="event.preventDefault(); alert('Sign up successful!');">
+      <label for="mobile">Mobile Number</label>
+      <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm" placeholder="Confirm your password" required>
+
+      <button class="btn" type="submit">Sign Up</button>
+    </form>
+
+    <div class="login">
+      Already have an account? <a href="login.html">Login</a>
+    </div>
+  </div>
+
+</body>
+</html>

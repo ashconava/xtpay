@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xmusk Pay - Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .dashboard {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      width: 400px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #4CAF50;
+    }
+
+    .balance {
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+      font-size: 20px;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .user-info {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <h2>Welcome to Xmusk Pay</h2>
+    <div class="user-info">
+      Logged in as: <span id="currentUser">-</span>
+    </div>
+    <div class="balance">
+      Wallet Balance: ₹<span id="walletBalance">0</span>
+    </div>
+
+    <div class="btn-group">
+      <button onclick="goTo('wallet.html')">💸 Send / Receive Money</button>
+      <button onclick="goTo('recharge.html')">💳 Recharge Wallet</button>
+      <button onclick="goTo('transactions.html')">📜 View Transactions</button>
+      <button onclick="logout()">🚪 Logout</button>
+    </
